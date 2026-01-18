@@ -8,15 +8,23 @@
             </div>
             <nav class="flex items-center space-x-8 font-medium text-sm text-light">
                 <a
-                    href="{{ route('home') }}"
+                    href="{{ route('terms') }}"
                     class="hover:underline"
                 >
                     Terms of Use
                 </a>
-                <a href="{{ route('home') }}" class="hover:underline">
+
+                <a
+                    href="{{ route('privacy') }}"
+                    class="hover:underline"
+                >
                     Privacy Policy
                 </a>
-                <a href="{{ route('home') }}" class="hover:underline">
+
+                <a
+                    href="{{ route('contact') }}"
+                    class="hover:underline"
+                >
                     Contact
                 </a>
             </nav>
