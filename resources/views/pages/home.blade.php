@@ -20,6 +20,7 @@
             <!-- Form -->
             <form
                 method="POST"
+                action="{{ route('shorten-url') }}"
                 class="w-full flex flex-col space-y-4"
             >
                 @csrf
@@ -30,8 +31,15 @@
                     name="url"
                     class="w-full border-2 border-dark/10 rounded-sm shadow-sm text-dark p-4 focus:border-primary focus:outline-none"
                     placeholder="Enter the URL to be shortened"
-                    requrired
+                    value="{{ old('url') }}"
+                    required
                 />
+
+                @error('url')
+                    <small class="font-medium text-sm text-primary text-left">
+                        {{ $message }}
+                    </small>
+                @enderror
 
                 <!-- Button -->
                 <button
@@ -40,6 +48,19 @@
                 >
                     Shorten URL
                 </button>
+
+                @if (session('short_url'))
+                    <div class="bg-green-100 border border-green-200 rounded-sm shadow-xs flex flex-col lg:flex-row justify-center items-center gap-2 p-4 text-green-700">
+                        <span class="font-semibold">Shortened URL:</span>
+                        <a
+                            href="{{ session('short_url') }}"
+                            target="_blank"
+                            class="font-medium underline"
+                        >
+                            {{ session('short_url') }}
+                        </a>
+                    </div>
+                @endif
             </form>
         </div>
 
