@@ -1,6 +1,7 @@
 @extends('app')
 
 @section('content')
+    <!-- Terms of Use -->
     <div class="bg-white border border-dark/10 rounded-sm shadow-sm py-6 px-8">
         <h1 class="font-semibold text-2xl text-primary mb-4">Terms of Use</h1>
 

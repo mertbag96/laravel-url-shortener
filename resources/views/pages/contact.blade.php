@@ -2,12 +2,15 @@
 
 @section('content')
     <div class="flex flex-col justify-center items-center">
+        <!-- Title -->
         <h1 class="font-semibold text-2xl lg:text-4xl text-primary text-center mb-4">Contact Us</h1>
 
+        <!-- Description -->
         <p class="mb-6 text-center">
             Have a question, feedback, or issue? Feel free to contact us using the form below.
         </p>
 
+        <!-- Form -->
         <form
             action="#"
             method="POST"
@@ -15,7 +18,9 @@
         >
             @csrf
 
+            <!-- Name -->
             <div class="text-sm">
+                <!-- Label -->
                 <label
                     for="name"
                     class="block font-medium mb-2"
@@ -24,6 +29,7 @@
                     <small class="text-primary">*</small>
                 </label>
 
+                <!-- Input -->
                 <input
                     type="text"
                     id="name"
@@ -34,7 +40,9 @@
                 >
             </div>
 
+            <!-- Email -->
             <div class="text-sm">
+                <!-- Label -->
                 <label
                     for="email"
                     class="block font-medium mb-2"
@@ -43,6 +51,7 @@
                     <small class="text-primary">*</small>
                 </label>
 
+                <!-- Input -->
                 <input
                     type="email"
                     id="email"
@@ -53,7 +62,9 @@
                 >
             </div>
 
+            <!-- Message -->
             <div class="text-sm">
+                <!-- Label -->
                 <label
                     for="message"
                     class="block font-medium mb-2"
@@ -62,6 +73,7 @@
                     <small class="text-primary">*</small>
                 </label>
 
+                <!-- Textarea -->
                 <textarea
                     rows="6"
                     id="message"
@@ -72,6 +84,7 @@
                 ></textarea>
             </div>
 
+            <!-- Button -->
             <button
                 type="submit"
                 class="bg-primary font-semibold text-light px-4 py-2 rounded-sm hover:bg-primary/90 cursor-pointer transition-colors duration-200"

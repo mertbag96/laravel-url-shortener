@@ -1,6 +1,7 @@
 <header class="bg-light text-dark border-b border-dark/10 shadow-sm">
     <div class="container mx-auto p-4">
         <div class="flex justify-between items-center">
+            <!-- Logo -->
             <div>
                 <a
                     href="{{ route('home') }}"
@@ -9,6 +10,7 @@
                     <h1 class="text-xl font-semibold">Laravel URL Shortener</h1>
                 </a>
             </div>
+            <!-- Navigation -->
             <nav>
                 <a
                     href="{{ route('home') }}"

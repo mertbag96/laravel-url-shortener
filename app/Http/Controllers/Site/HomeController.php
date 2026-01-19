@@ -8,6 +8,12 @@ use Illuminate\View\View;
 
 class HomeController extends Controller
 {
+    /**
+     * Summary of __invoke
+     *
+     * @param Request $request
+     * @return View
+     */
     public function __invoke(Request $request): View
     {
         return view('pages.home');

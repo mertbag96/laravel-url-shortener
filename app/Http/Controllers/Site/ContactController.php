@@ -8,6 +8,11 @@ use Illuminate\View\View;
 
 class ContactController extends Controller
 {
+    /**
+     * Summary of index
+     *
+     * @return View
+     */
     public function index(): View
     {
         return view('pages.contact');
