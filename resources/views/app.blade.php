@@ -4,7 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Title -->
         <title>{{ config('app.name', 'Laravel URL Shortener') }}</title>
+
+        <!-- Favicon -->
+        <link type="image/png" sizes="32x32" rel="icon" href="/favicon.png">
 
         <!-- Styles / Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
