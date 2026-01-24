@@ -7,7 +7,7 @@
                     href="{{ route('home') }}"
                     class="text-primary"
                 >
-                    <h1 class="text-xl font-semibold">Laravel URL Shortener</h1>
+                    <h1 class="text-xl font-semibold">{{ config('app.name') ?? 'LUS' }}</h1>
                 </a>
             </div>
             <!-- Navigation -->

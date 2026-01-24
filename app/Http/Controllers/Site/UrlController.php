@@ -55,7 +55,7 @@ class UrlController extends Controller
             ]);
         }
 
-        $shortUrl = (string) 'https://laravel-url-shortener.test' . '/' . $url->code;
+        $shortUrl = (string) 'https://lus.test' . '/' . $url->code;
 
         return redirect()
             ->back()

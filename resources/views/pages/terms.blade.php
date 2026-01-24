@@ -13,7 +13,7 @@
 
         <h2 class="font-semibold text-lg text-primary mb-2">1. Purpose of the Service</h2>
         <p class="mb-2">
-            Laravel URL Shortener is a demo and development-purpose application designed to
+            {{ config('app.name') ?? 'LUS' }} is a demo and development-purpose application designed to
             demonstrate URL shortening functionality. The service is provided “as is” and is not
             intended for production or commercial use.
         </p>
@@ -37,19 +37,19 @@
         <h2 class="font-semibold text-lg text-primary mb-2">4. Data and Content Responsibility</h2>
         <p class="mb-2">
             You are solely responsible for the content of any URL you shorten using this service.
-            Laravel URL Shortener does not review, monitor, or endorse the content of shortened links.
+            {{ config('app.name') ?? 'LUS' }} does not review, monitor, or endorse the content of shortened links.
         </p>
 
         <h2 class="font-semibold text-lg text-primary mb-2">5. Limitation of Liability</h2>
         <p class="mb-2">
-            Laravel URL Shortener and its developers shall not be held liable for any direct,
+            {{ config('app.name') ?? 'LUS' }} and its developers shall not be held liable for any direct,
             indirect, incidental, or consequential damages arising from the use or inability
             to use this service.
         </p>
 
         <h2 class="font-semibold text-lg text-primary mb-2">6. Intellectual Property</h2>
         <p class="mb-2">
-            All content, branding, and code related to Laravel URL Shortener are provided for
+            All content, branding, and code related to {{ config('app.name') ?? 'LUS' }} are provided for
             educational and development purposes. No rights or licenses are granted except
             as explicitly stated.
         </p>

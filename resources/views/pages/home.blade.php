@@ -4,12 +4,12 @@
     <div class="text-center">
         <!-- Title -->
         <h1 class="text-2xl md:text-4xl font-semibold text-primary">
-            Welcome to Laravel URL Shortener
+            Welcome to {{ config('app.name') ?? 'LUS' }}
         </h1>
 
         <!-- Description -->
         <p class="mt-4 mb-8 text-md md:text-lg text-dark">
-            With Laravel URL Shortener, shorten your links in seconds for free.
+            With {{ config('app.name') ?? 'LUS' }}, shorten your links in seconds for free.
         </p>
 
         <!-- Form -->
