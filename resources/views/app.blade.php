@@ -19,12 +19,12 @@
             </style>
         @endif
     </head>
-    <body class="bg-light text-dark font-sans antialiased min-h-screen">
+    <body class="w-[92%] sm:w-[82%] lg:w-[72%] xl:w-[62%] mx-auto bg-light font-sans font-medium antialiased">
         <!-- Header -->
         @include('layouts.header')
 
         <!-- Main -->
-        <main class="main container mx-auto p-12 w-full xl:w-1/2">
+        <main class="flex flex-col space-y-4 py-4">
             @yield('content')
         </main>
 
