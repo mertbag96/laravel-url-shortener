@@ -1,12 +1,12 @@
 @extends('app')
 
 @section('content')
-    <div class="flex flex-col justify-center items-center">
+    <div class="px-4 py-8 bg-white border border-dark/20 rounded-lg shadow-sm flex flex-col justify-center items-center">
         <!-- Title -->
-        <h1 class="font-semibold text-2xl lg:text-4xl text-primary text-center mb-4">Contact Us</h1>
+        <h1 class="font-semibold text-xl lg:text-2xl text-primary text-center mb-4">Contact Us</h1>
 
         <!-- Description -->
-        <p class="mb-6 text-center">
+        <p class="mb-6 font-normal text-sm text-center">
             Have a question, feedback, or issue? Feel free to contact us using the form below.
         </p>
 
@@ -14,9 +14,24 @@
         <form
             method="POST"
             action="{{ route('contact.store') }}"
-            class="w-full lg:w-[85%] space-y-4 bg-white border border-dark/10 p-6 rounded-sm shadow-sm"
+            class="relative overflow-hidden w-full lg:w-[85%] space-y-4 bg-white border border-dark/20 p-6 rounded-lg shadow-sm"
         >
             @csrf
+
+            <!-- Decorations -->
+            <div class="pointer-events-none absolute inset-0">
+                <div
+                    class="absolute -top-24 -left-24 w-20 h-20 md:w-32 md:h-32 bg-linear-to-br from-primary/20 to-red-300/20 rounded-full blur-3xl">
+                </div>
+
+                <div
+                    class="absolute -bottom-24 -right-24 w-20 h-20 md:w-32 md:h-32 bg-linear-to-tr from-red-200/20 to-primary/20 rounded-full blur-3xl">
+                </div>
+
+                <div
+                    class="absolute top-1/3 right-1/4 w-16 h-16 md:w-32 md:h-32 bg-primary/15 sm:bg-primary/10 rounded-full blur-2xl">
+                </div>
+            </div>
 
             <!-- Name -->
             <div class="text-sm">
