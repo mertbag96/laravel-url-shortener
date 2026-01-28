@@ -14,7 +14,7 @@ class PageController extends Controller
      */
     public function terms(): View
     {
-        return view('pages.terms');
+        return view('pages.site.terms');
     }
 
     /**
@@ -24,6 +24,6 @@ class PageController extends Controller
      */
     public function privacy(): View
     {
-        return view('pages.privacy');
+        return view('pages.site.privacy');
     }
 }
