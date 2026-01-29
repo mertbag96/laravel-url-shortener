@@ -1,4 +1,4 @@
-<header class="mt-4 px-6 py-4 rounded-lg shadow-md bg-white border border-dark/20 text-primary z-50">
+<footer class="mb-4 px-6 py-4 rounded-lg shadow-sm bg-white border border-dark/20 text-primary">
     <div class="flex justify-between items-center">
         <!-- Logo -->
         <div>
@@ -13,11 +13,28 @@
                 <span>
                     {{ config('app.name') ?? 'LUS' }}
                 </span>
-            </a>
         </div>
 
         <!-- Navigation -->
         <nav class="flex items-center space-x-6 text-sm">
+            <!-- Terms of Use -->
+            <a
+                target="_blank"
+                href="{{ route('terms') }}"
+                class="hover:underline"
+            >
+                Terms of Use
+            </a>
+
+            <!-- Privacy Policy -->
+            <a
+                target="_blank"
+                href="{{ route('privacy') }}"
+                class="hover:underline"
+            >
+                Privacy Policy
+            </a>
+
             <!-- Contact -->
             <a
                 href="{{ route('contact.index') }}"
@@ -25,22 +42,6 @@
             >
                 Contact
             </a>
-
-            <!-- Login -->
-            <a
-                href="{{ route('home') }}"
-                class="hover:underline"
-            >
-                Login
-            </a>
-
-            <!-- Register -->
-            <a
-                href="{{ route('home') }}"
-                class="hover:underline"
-            >
-                Register
-            </a>
         </nav>
     </div>
-</header>
+</footer>

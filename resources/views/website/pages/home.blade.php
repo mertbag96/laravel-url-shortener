@@ -1,4 +1,4 @@
-@extends('app')
+@extends('website.layouts.app')
 
 @section('title', 'Shorten your URLs in seconds for free')
 

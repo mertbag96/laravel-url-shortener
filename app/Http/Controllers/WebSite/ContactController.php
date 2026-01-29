@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Site;
+namespace App\Http\Controllers\WebSite;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Site\ContactStoreRequest;
+use App\Http\Requests\WebSite\ContactStoreRequest;
 use App\Models\Contact;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
@@ -17,7 +17,7 @@ class ContactController extends Controller
      */
     public function index(): View
     {
-        return view('pages.site.contact');
+        return view('website.pages.contact');
     }
 
     /**

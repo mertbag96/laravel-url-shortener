@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\Site\ContactController;
-use App\Http\Controllers\Site\HomeController;
-use App\Http\Controllers\Site\PageController;
-use App\Http\Controllers\Site\UrlController;
+use App\Http\Controllers\WebSite\ContactController;
+use App\Http\Controllers\WebSite\HomeController;
+use App\Http\Controllers\WebSite\PageController;
+use App\Http\Controllers\WebSite\UrlController;
 use Illuminate\Support\Facades\Route;
 
 // Home

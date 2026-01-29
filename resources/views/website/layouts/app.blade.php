@@ -24,7 +24,7 @@
     </head>
     <body class="w-[92%] sm:w-[82%] lg:w-[72%] xl:w-[62%] mx-auto bg-light font-sans font-medium antialiased">
         <!-- Header -->
-        @include('layouts.site.header')
+        @include('website.partials.header')
 
         <!-- Main -->
         <main class="flex flex-col space-y-4 py-4">
@@ -32,7 +32,7 @@
         </main>
 
         <!-- Footer -->
-        @include('layouts.site.footer')
+        @include('website.partials.footer')
     </body>
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Site;
+namespace App\Http\Controllers\WebSite;
 
 use App\Http\Controllers\Controller;
 use Illuminate\View\View;
@@ -14,7 +14,7 @@ class PageController extends Controller
      */
     public function terms(): View
     {
-        return view('pages.site.terms');
+        return view('website.pages.terms');
     }
 
     /**
@@ -24,6 +24,6 @@ class PageController extends Controller
      */
     public function privacy(): View
     {
-        return view('pages.site.privacy');
+        return view('website.pages.privacy');
     }
 }
