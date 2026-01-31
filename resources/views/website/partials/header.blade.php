@@ -20,7 +20,7 @@
             <!-- Contact -->
             <a
                 href="{{ route('website.contact.show') }}"
-                class="hover:underline"
+                class="hidden sm:block hover:underline"
             >
                 Contact
             </a>
@@ -28,7 +28,7 @@
             <!-- Get Started -->
             <a
                 href="{{ route('website.pages.home') }}"
-                class="hover:underline"
+                class="bg-primary py-1 px-2 rounded-lg text-white hover:bg-red-600 transition-colors duration-200"
             >
                 Get Started
             </a>
