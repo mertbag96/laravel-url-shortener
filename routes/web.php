@@ -1,35 +1,16 @@
 <?php
 
-use App\Http\Controllers\WebSite\ContactController;
-use App\Http\Controllers\WebSite\HomeController;
-use App\Http\Controllers\WebSite\PageController;
-use App\Http\Controllers\WebSite\UrlController;
-use Illuminate\Support\Facades\Route;
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| This file is loaded automatically by Laravel and already includes
+| the "web" middleware stack (sessions, CSRF, validation errors, etc).
+|
+| We keep this file minimal and simply require other web route files
+| (such as website.php) to keep routing organized and maintainable.
+|
+*/
 
-// Home
-Route::get('/', HomeController::class)
-    ->name('home');
-
-// Shorten URL
-Route::post('/shorten', [UrlController::class, 'store'])
-    ->name('shorten-url');
-
-// Terms of Use
-Route::get('/terms-of-use', [PageController::class, 'terms'])
-    ->name('terms');
-
-// Privacy Policy
-Route::get('/privacy-policy', [PageController::class, 'privacy'])
-    ->name('privacy');
-
-// Contact
-Route::get('/contact', [ContactController::class, 'index'])
-    ->name('contact.index');
-
-// Contact (Submit)
-Route::post('/contact', [ContactController::class, 'store'])
-    ->name('contact.store');
-
-// Redirect URL
-Route::get('/{code}', [UrlController::class, 'redirect'])
-    ->name('redirect-url');
+require __DIR__ . '/website.php';

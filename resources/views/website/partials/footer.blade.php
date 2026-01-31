@@ -3,7 +3,7 @@
         <!-- Logo -->
         <div>
             <a
-                href="{{ route('home') }}"
+                href="{{ route('website.pages.home') }}"
                 class="flex items-center space-x-1 font-semibold text-lg"
             >
                 <!-- Icon -->
@@ -20,7 +20,7 @@
             <!-- Terms of Use -->
             <a
                 target="_blank"
-                href="{{ route('terms') }}"
+                href="{{ route('website.pages.terms') }}"
                 class="hover:underline"
             >
                 Terms of Use
@@ -29,7 +29,7 @@
             <!-- Privacy Policy -->
             <a
                 target="_blank"
-                href="{{ route('privacy') }}"
+                href="{{ route('website.pages.privacy') }}"
                 class="hover:underline"
             >
                 Privacy Policy
@@ -37,7 +37,7 @@
 
             <!-- Contact -->
             <a
-                href="{{ route('contact.index') }}"
+                href="{{ route('website.contact.show') }}"
                 class="hover:underline"
             >
                 Contact

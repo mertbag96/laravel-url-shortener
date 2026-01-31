@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\WebSite;
+namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\WebSite\ContactStoreRequest;
+use App\Http\Requests\Website\ContactStoreRequest;
 use App\Models\Contact;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
@@ -11,11 +11,11 @@ use Illuminate\View\View;
 class ContactController extends Controller
 {
     /**
-     * Summary of index
+     * Summary of show
      *
      * @return View
      */
-    public function index(): View
+    public function show(): View
     {
         return view('website.pages.contact');
     }

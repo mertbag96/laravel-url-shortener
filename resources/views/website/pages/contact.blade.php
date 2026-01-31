@@ -15,7 +15,7 @@
         <!-- Form -->
         <form
             method="POST"
-            action="{{ route('contact.store') }}"
+            action="{{ route('website.contact.store') }}"
             class="relative overflow-hidden w-full lg:w-[85%] space-y-4 bg-white border border-dark/20 p-6 rounded-lg shadow-sm"
         >
             @csrf

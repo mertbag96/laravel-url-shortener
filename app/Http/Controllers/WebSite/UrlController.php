@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\WebSite;
+namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
 use App\Models\Url;
@@ -12,12 +12,12 @@ use Illuminate\Support\Facades\Validator;
 class UrlController extends Controller
 {
     /**
-     * Summary of store
+     * Summary of shorten
      *
      * @param Request $request
      * @return RedirectResponse
      */
-    public function store(Request $request): RedirectResponse
+    public function shorten(Request $request): RedirectResponse
     {
         $validator = Validator::make(
             $request->all(),
@@ -55,7 +55,7 @@ class UrlController extends Controller
             ]);
         }
 
-        $shortUrl = (string) 'https://lus.test' . '/' . $url->code;
+        $shortUrl = config('app.url') . '/' . $url->code;
 
         return redirect()
             ->back()

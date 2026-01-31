@@ -32,7 +32,7 @@
         <!-- Form -->
         <form
             method="POST"
-            action="{{ route('shorten-url') }}"
+            action="{{ route('website.url.shorten') }}"
             class="w-full md:w-[90%] xl:w-2/3 flex flex-col space-y-4"
         >
             @csrf

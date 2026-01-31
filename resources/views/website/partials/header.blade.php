@@ -3,7 +3,7 @@
         <!-- Logo -->
         <div>
             <a
-                href="{{ route('home') }}"
+                href="{{ route('website.pages.home') }}"
                 class="flex items-center space-x-1 font-semibold text-lg"
             >
                 <!-- Icon -->
@@ -19,26 +19,18 @@
         <nav class="flex items-center space-x-6 text-sm">
             <!-- Contact -->
             <a
-                href="{{ route('contact.index') }}"
+                href="{{ route('website.contact.show') }}"
                 class="hover:underline"
             >
                 Contact
             </a>
 
-            <!-- Login -->
+            <!-- Get Started -->
             <a
-                href="{{ route('home') }}"
+                href="{{ route('website.pages.home') }}"
                 class="hover:underline"
             >
-                Login
-            </a>
-
-            <!-- Register -->
-            <a
-                href="{{ route('home') }}"
-                class="hover:underline"
-            >
-                Register
+                Get Started
             </a>
         </nav>
     </div>
