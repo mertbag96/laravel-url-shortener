@@ -1,6 +1,6 @@
-## LUS (Laravel URL Shortener)
+## LUS - Laravel URL Shortener
 
-This is a basic URL shortener app built with Laravel.
+LUS is a modern, fast, and secure URL shortener application built with **Laravel 12** and **Blade**. It allows users to shorten long URLs, manage links, and track usage with a clean and simple interface.
 
 ![Landing Page 1](https://github.com/mertbag96/lus/blob/main/public/homepage.png)
 
