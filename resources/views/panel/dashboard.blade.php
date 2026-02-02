@@ -26,7 +26,7 @@
         <!-- Main -->
         <main class="w-full min-h-dvh flex flex-col justify-center items-center space-y-12">
             <!-- Title -->
-            <h1 class="font-semibold text-2xl text-primary text-center">
+            <h1 class="text-2xl text-primary text-center">
                 Welcome to Dashboard!
             </h1>
 

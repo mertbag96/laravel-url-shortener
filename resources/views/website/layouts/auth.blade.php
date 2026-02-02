@@ -73,7 +73,7 @@
                             <!-- Title & Description -->
                             <div class="flex flex-col space-y-1">
                                 <!-- Title -->
-                                <h2 class="font-semibold text-md text-white">
+                                <h2 class="text-md text-white">
                                     Easy to Use
                                 </h2>
 
@@ -97,7 +97,7 @@
                             <!-- Title & Description -->
                             <div class="flex flex-col space-y-1">
                                 <!-- Title -->
-                                <h2 class="font-semibold text-md text-white">
+                                <h2 class="text-md text-white">
                                     Fast
                                 </h2>
 
@@ -119,7 +119,7 @@
                             <!-- Title & Description -->
                             <div class="flex flex-col space-y-1">
                                 <!-- Title -->
-                                <h2 class="font-semibold text-md text-white">
+                                <h2 class="text-md text-white">
                                     Secure
                                 </h2>
 
