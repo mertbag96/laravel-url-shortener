@@ -39,6 +39,13 @@
                     class="password-eye-off hidden absolute top-2.5 right-2.5 w-5 h-5 text-dark/50 hover:text-primary/90 cursor-pointer transition duration-200"
                 ></i>
             </div>
+
+            <!-- Error Message -->
+            @error('password')
+                <small class="text-xs text-primary">
+                    {{ $message }}
+                </small>
+            @enderror
         </div>
 
         <!-- Password Confirmation -->
@@ -72,15 +79,40 @@
                     class="password-eye-off hidden absolute top-2.5 right-2.5 w-5 h-5 text-dark/50 hover:text-primary/90 cursor-pointer transition duration-200"
                 ></i>
             </div>
+
+            <!-- Error Message -->
+            @error('password_confirmation')
+                <small class="text-xs text-primary">
+                    {{ $message }}
+                </small>
+            @enderror
         </div>
 
+        <!-- Submit -->
         <div class="text-sm">
-            <x-ui.button type="submit" fullWidth>Reset Password</x-ui.button>
+            <!-- Button -->
+            <button
+                type="submit"
+                class="w-full bg-primary hover:bg-red-600 rounded-lg p-2.5 font-medium text-center text-white cursor-pointer transition-colors duration-200"
+            >
+                Reset Password
+            </button>
         </div>
 
+        <!-- Contact -->
         <div class="mt-4 flex justify-center items-center space-x-1 text-sm">
-            <p class="text-dark/90">Do you need help?</p>
-            <x-ui.link href="{{ route('website.contact.show') }}">Contact us</x-ui.link>
+            <!-- Text -->
+            <p class="text-dark/90">
+                Do you need help?
+            </p>
+
+            <!-- Link -->
+            <a
+                href="{{ route('website.contact.show') }}"
+                class="text-primary hover:underline"
+            >
+                Contact us
+            </a>
         </div>
     </form>
 </x-website.layouts.auth>

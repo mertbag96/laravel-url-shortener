@@ -1,11 +1,16 @@
 <div class="py-8 space-y-4">
-    <x-ui.title :level="1" variant="faq" align="center">Frequently Asked Questions</x-ui.title>
+    <!-- Title -->
+    <h1 class="text-primary text-xl text-center">
+        Frequently Asked Questions
+    </h1>
 
     <!-- Item 1 -->
     <div class="faq-item bg-white border border-dark/10 rounded-lg shadow-sm overflow-hidden">
         <!-- Question -->
-        <button type="button"
-            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer">
+        <button
+            type="button"
+            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer"
+        >
             What is LUS?
             <span class="text-xl">+</span>
         </button>
@@ -23,8 +28,10 @@
     <!-- Item 2 -->
     <div class="faq-item bg-white border border-dark/10 rounded-lg shadow-sm overflow-hidden">
         <!-- Question -->
-        <button type="button"
-            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer">
+        <button
+            type="button"
+            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer"
+        >
             How does it work?
             <span class="text-xl">+</span>
         </button>
@@ -41,8 +48,10 @@
     <!-- Item 3 -->
     <div class="faq-item bg-white border border-dark/10 rounded-lg shadow-sm overflow-hidden">
         <!-- Question -->
-        <button type="button"
-            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer">
+        <button
+            type="button"
+            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer"
+        >
             Is LUS free to use?
             <span class="text-xl">+</span>
         </button>
@@ -60,8 +69,10 @@
     <!-- Item 4 -->
     <div class="faq-item bg-white border border-dark/10 rounded-lg shadow-sm overflow-hidden">
         <!-- Question -->
-        <button type="button"
-            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer">
+        <button
+            type="button"
+            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer"
+        >
             Do shortened links expire?
             <span class="text-xl">+</span>
         </button>
@@ -78,8 +89,10 @@
     <!-- Item 5 -->
     <div class="faq-item bg-white border border-dark/10 rounded-lg shadow-sm overflow-hidden">
         <!-- Question -->
-        <button type="button"
-            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer">
+        <button
+            type="button"
+            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer"
+        >
             Can I track my link's activity?
             <span class="text-xl">+</span>
         </button>
@@ -96,8 +109,10 @@
     <!-- Item 6 -->
     <div class="faq-item bg-white border border-dark/10 rounded-lg shadow-sm overflow-hidden">
         <!-- Question -->
-        <button type="button"
-            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer">
+        <button
+            type="button"
+            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer"
+        >
             Is it safe to use LUS?
             <span class="text-xl">+</span>
         </button>
@@ -114,8 +129,10 @@
     <!-- Item 7 -->
     <div class="faq-item bg-white border border-dark/10 rounded-lg shadow-sm overflow-hidden">
         <!-- Question -->
-        <button type="button"
-            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer">
+        <button
+            type="button"
+            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer"
+        >
             Do I need to create an account?
             <span class="text-xl">+</span>
         </button>
@@ -131,8 +148,10 @@
     <!-- Item 8 -->
     <div class="faq-item bg-white border border-dark/10 rounded-lg shadow-sm overflow-hidden">
         <!-- Question -->
-        <button type="button"
-            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer">
+        <button
+            type="button"
+            class="faq-question w-full flex justify-between items-center p-4 text-left text-primary cursor-pointer"
+        >
             Why should I use LUS?
             <span class="text-xl">+</span>
         </button>

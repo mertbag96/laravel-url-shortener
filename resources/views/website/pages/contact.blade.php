@@ -1,7 +1,8 @@
 <x-website.layouts.app title="Contact">
     <!-- Contact -->
     <div class="py-8 flex flex-col justify-center items-center">
-        <x-ui.title :level="1" variant="page" align="center" class="mb-4">Contact Us</x-ui.title>
+        <!-- Title -->
+        <h1 class="text-xl lg:text-2xl text-primary text-center mb-4">Contact Us</h1>
 
         <!-- Description -->
         <p class="mb-6 text-sm text-center text-dark/90">
@@ -16,8 +17,18 @@
         >
             @csrf
 
+            <!-- Name -->
             <div class="text-sm">
-                <label for="name" class="block mb-2">Name <small class="text-primary">*</small></label>
+                <!-- Label -->
+                <label
+                    for="name"
+                    class="block mb-2"
+                >
+                    Name
+                    <small class="text-primary">*</small>
+                </label>
+
+                <!-- Input -->
                 <input
                     type="text"
                     id="name"
@@ -28,11 +39,28 @@
                     required
                 >
 
-                <div class="mt-1 ml-1"><x-ui.error name="name" /></div>
+                <!-- Error Message -->
+                <div class="mt-1 ml-1">
+                    @error('name')
+                        <small class="text-xs text-primary">
+                            {{ $message }}
+                        </small>
+                    @enderror
+                </div>
             </div>
 
+            <!-- Email -->
             <div class="text-sm">
-                <label for="email" class="block mb-2">Email <small class="text-primary">*</small></label>
+                <!-- Label -->
+                <label
+                    for="email"
+                    class="block mb-2"
+                >
+                    Email
+                    <small class="text-primary">*</small>
+                </label>
+
+                <!-- Input -->
                 <input
                     type="email"
                     id="email"
@@ -42,11 +70,29 @@
                     value="{{ old('email') }}"
                     required
                 >
-                <div class="mt-1 ml-1"><x-ui.error name="email" /></div>
+
+                <!-- Error Message -->
+                <div class="mt-1 ml-1">
+                    @error('email')
+                        <small class="text-xs text-primary">
+                            {{ $message }}
+                        </small>
+                    @enderror
+                </div>
             </div>
 
+            <!-- Message -->
             <div class="text-sm">
-                <label for="message" class="block mb-2">Message <small class="text-primary">*</small></label>
+                <!-- Label -->
+                <label
+                    for="message"
+                    class="block mb-2"
+                >
+                    Message
+                    <small class="text-primary">*</small>
+                </label>
+
+                <!-- Textarea -->
                 <textarea
                     rows="6"
                     id="message"
@@ -55,13 +101,30 @@
                     placeholder="Enter your message"
                     required
                 >{{ old('message') }}</textarea>
-                <div class="mt-1 ml-1"><x-ui.error name="message" /></div>
+
+                <!-- Error Message -->
+                <div class="mt-1 ml-1">
+                    @error('message')
+                        <small class="text-xs text-primary">
+                            {{ $message }}
+                        </small>
+                    @enderror
+                </div>
             </div>
 
-            <x-ui.button type="submit" variant="primary-sm">Send Message</x-ui.button>
+            <!-- Button -->
+            <button
+                type="submit"
+                class="bg-primary text-light px-4 py-2 rounded-sm hover:bg-primary/90 cursor-pointer transition-colors duration-200"
+            >
+                Send Message
+            </button>
 
+            <!-- Success Alert -->
             @if (session('success'))
-                <x-ui.alert type="success" class="mt-2.5">{{ session('success') }}</x-ui.alert>
+                <div class="w-full bg-green-100 border border-green-200 rounded-sm shadow-xs p-4 mt-2.5 text-green-700 text-center">
+                    {{ session('success') }}
+                </div>
             @endif
         </form>
     </div>

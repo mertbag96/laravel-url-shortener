@@ -25,15 +25,40 @@
                 placeholder="name@example.com"
                 required
             >
+
+            <!-- Error Message -->
+            @error('email')
+                <small class="text-xs text-primary">
+                    {{ $message }}
+                </small>
+            @enderror
         </div>
 
+        <!-- Submit -->
         <div class="text-sm">
-            <x-ui.button type="submit" fullWidth>Send Reset Link</x-ui.button>
+            <!-- Button -->
+            <button
+                type="submit"
+                class="w-full bg-primary hover:bg-red-600 rounded-lg p-2.5 font-medium text-center text-white cursor-pointer transition-colors duration-200"
+            >
+                Send Reset Link
+            </button>
         </div>
 
+        <!-- Sign In -->
         <div class="mt-4 flex justify-center items-center space-x-1 text-sm">
-            <p class="text-dark/90">Do you remember your password?</p>
-            <x-ui.link href="{{ route('website.pages.auth.login') }}">Sign in</x-ui.link>
+            <!-- Text -->
+            <p class="text-dark/90">
+                Do you remember your password?
+            </p>
+
+            <!-- Link -->
+            <a
+                href="{{ route('website.pages.auth.login') }}"
+                class="text-primary hover:underline"
+            >
+                Sign in
+            </a>
         </div>
     </form>
 </x-website.layouts.auth>

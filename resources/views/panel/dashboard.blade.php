@@ -25,11 +25,25 @@
     <body class="font-sans antialiased">
         <!-- Main -->
         <main class="w-full min-h-dvh flex flex-col justify-center items-center space-y-12">
-            <x-ui.title :level="1" variant="page-sm" align="center">Welcome to Dashboard!</x-ui.title>
+            <!-- Title -->
+            <h1 class="text-2xl text-primary text-center">
+                Welcome to Dashboard!
+            </h1>
 
-            <form method="POST" action="{{ route('auth.logout') }}">
+            <!-- Form -->
+            <form
+                method="POST"
+                action="{{ route('auth.logout') }}"
+            >
                 @csrf
-                <x-ui.button type="submit">Log out</x-ui.button>
+
+                <!-- Submit-->
+                <button
+                    type="submit"
+                    class="bg-primary py-2 px-4 rounded-lg text-white hover:bg-red-600 transition-colors duration-200 cursor-pointer"
+                >
+                    Log out
+                </button>
             </form>
         </main>
     </body>

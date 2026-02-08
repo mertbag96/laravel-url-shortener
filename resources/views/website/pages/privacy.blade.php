@@ -1,7 +1,7 @@
 <x-website.layouts.app title="Privacy Policy">
     <!-- Privacu Policy -->
     <div class="p-8 bg-white border border-dark/20 rounded-lg shadow-sm text-dark/90 text-sm">
-        <x-ui.title :level="1" variant="page-sm" class="mb-4">Privacy Policy</x-ui.title>
+        <h1 class="text-2xl text-primary mb-4">Privacy Policy</h1>
 
         <p class="mb-4">
             This Privacy Policy explains how this website collects,
@@ -9,7 +9,7 @@
             for development and demonstration purposes only.
         </p>
 
-        <x-ui.title :level="2" variant="section">1. Information We Collect</x-ui.title>
+        <h2 class="text-lg text-primary mb-2">1. Information We Collect</h2>
         <p class="mb-2">
             We may collect limited information when you use the service, including:
         </p>
@@ -19,7 +19,7 @@
             <li>Basic technical information such as IP address or browser type (for debugging and security)</li>
         </ul>
 
-        <x-ui.title :level="2" variant="section">2. How We Use Information</x-ui.title>
+        <h2 class="text-lg text-primary mb-2">2. How We Use Information</h2>
         <p class="mb-2">
             Collected information is used solely to:
         </p>
@@ -29,49 +29,49 @@
             <li>Improve application performance during development</li>
         </ul>
 
-        <x-ui.title :level="2" variant="section">3. Cookies</x-ui.title>
+        <h2 class="text-lg text-primary mb-2">3. Cookies</h2>
         <p class="mb-2">
             This website may use basic cookies for session handling or functionality.
             Cookies do not contain personally identifiable information.
         </p>
 
-        <x-ui.title :level="2" variant="section">4. Data Storage and Security</x-ui.title>
+        <h2 class="text-lg text-primary mb-2">4. Data Storage and Security</h2>
         <p class="mb-2">
             Data is stored using standard development practices. While reasonable measures
             are taken to protect information, no method of storage or transmission is 100% secure.
         </p>
 
-        <x-ui.title :level="2" variant="section">5. Data Retention</x-ui.title>
+        <h2 class="text-lg text-primary mb-2">5. Data Retention</h2>
         <p class="mb-2">
             Shortened URLs and related data may be deleted at any time without notice.
             We do not guarantee long-term data retention.
         </p>
 
-        <x-ui.title :level="2" variant="section">6. Third-Party Links</x-ui.title>
+        <h2 class="text-lg text-primary mb-2">6. Third-Party Links</h2>
         <p class="mb-2">
             Shortened URLs may redirect to third-party websites. We are not responsible
             for the privacy practices or content of external sites.
         </p>
 
-        <x-ui.title :level="2" variant="section">7. Children’s Privacy</x-ui.title>
+        <h2 class="text-lg text-primary mb-2">7. Children’s Privacy</h2>
         <p class="mb-2">
             This service is not intended for use by children under the age of 13.
             We do not knowingly collect personal information from children.
         </p>
 
-        <x-ui.title :level="2" variant="section">8. Changes to This Privacy Policy</x-ui.title>
+        <h2 class="text-lg text-primary mb-2">8. Changes to This Privacy Policy</h2>
         <p class="mb-2">
             This Privacy Policy may be updated at any time. Changes take effect immediately
             once posted on this page.
         </p>
 
-        <x-ui.title :level="2" variant="section">9. Contact</x-ui.title>
+        <h2 class="text-lg text-primary mb-2">9. Contact</h2>
         <p class="mb-2">
             If you have any questions about this Privacy Policy, please contact the project
             maintainer through the repository or development channel.
         </p>
 
-        <x-ui.title :level="2" variant="section">Disclaimer</x-ui.title>
+        <h2 class="text-lg text-primary mb-2">Disclaimer</h2>
         <p>
             This application is a development and demo project only and should not be used
             to store sensitive or personal information.

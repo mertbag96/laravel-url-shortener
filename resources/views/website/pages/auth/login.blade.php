@@ -28,7 +28,12 @@
                 required
             >
 
-            <x-ui.error name="email" />
+            <!-- Error Message -->
+            @error('email')
+                <small class="text-xs text-primary">
+                    {{ $message }}
+                </small>
+            @enderror
         </div>
 
         <!-- Password -->
@@ -50,7 +55,12 @@
                     required
                 >
 
-                <x-ui.error name="password" />
+                <!-- Error Message -->
+                @error('password')
+                    <small class="text-xs text-primary">
+                        {{ $message }}
+                    </small>
+                @enderror
 
                 <!-- Show Password -->
                 <i
@@ -84,18 +94,40 @@
                 </label>
             </div>
 
-            <x-ui.link href="{{ route('website.pages.auth.forgot-password') }}" class="text-xs">
+            <!-- Forgot Password -->
+            <a
+                href="{{ route('website.pages.auth.forgot-password') }}"
+                class="text-xs text-primary hover:underline"
+            >
                 Forgot password?
-            </x-ui.link>
+            </a>
         </div>
 
+        <!-- Submit -->
         <div class="text-sm">
-            <x-ui.button type="submit" fullWidth>Log in</x-ui.button>
+            <!-- Button -->
+            <button
+                type="submit"
+                class="w-full bg-primary hover:bg-red-600 rounded-lg p-2.5 font-medium text-center text-white cursor-pointer transition-colors duration-200"
+            >
+                Log in
+            </button>
         </div>
 
+        <!-- Sign Up -->
         <div class="mt-4 flex justify-center items-center space-x-1 text-sm">
-            <p class="text-dark/90">Don't have an account?</p>
-            <x-ui.link href="{{ route('website.pages.auth.register') }}">Sign up</x-ui.link>
+            <!-- Text -->
+            <p class="text-dark/90">
+                Don't have an account?
+            </p>
+
+            <!-- Link -->
+            <a
+                href="{{ route('website.pages.auth.register') }}"
+                class="text-primary hover:underline"
+            >
+                Sign up
+            </a>
         </div>
     </form>
 </x-website.layouts.auth>
